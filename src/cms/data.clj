@@ -1,9 +1,8 @@
 (ns cms.data
-  (:require [cms.domain.author :as au]))
+  (:require [cms.domain.author :as a]
+            [cms.domain.article :as ar]))
+
 
 (defn setup []
-  (au/create "Siva" "s@e.com")
-  (au/create "Amit" "a@e.com"))
-
-
-;;(require '[cms.domain.author :as au] '[datomic.api :as api])
+  (a/create "Siva" "s@e.com")
+  (a/create "Amit" "a@e.com"))
